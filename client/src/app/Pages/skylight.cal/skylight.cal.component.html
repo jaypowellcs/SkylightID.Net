@@ -1,1 +1,87 @@
-<p>skylight.cal works!</p>
+<div class="container mx-auto">
+  <div class="flex flex-col items-center">
+    <h1 class="text-red-500 text-5xl font-bold p-4">
+      Skylight Replacement Calculator
+    </h1>
+    <section class="flex flex-col justify-center lg:flex lg:flex-row-reverse">
+      <div class="basis-1/2 max-w-md rounded overflow-visible shadow-lg m-2">
+        <img
+          class="w-full"
+          src="../../../assets/selfflash.jpg"
+          alt="Arylic Curb-Mounteded Skylight"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-center text-xl mb-2">
+            Velux Self-Flashed Skylight
+          </div>
+          <p class="text-gray-700 text-base">
+            Self-flashed skylights differ more from both deck and curb-mounted
+            skylights because their curb and flashing are built into the
+            skylight.
+          </p>
+        </div>
+        <div class="flex justify-center p-3">
+          <button
+            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full"
+          >
+            <a routerLink="/selfcal" routerLinkActive="active">
+              Self-flashed Skylight Calculator
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <div class="basis-1/2 max-w-md rounded overflow-hidden shadow-lg m-2">
+        <img
+          class="w-full"
+          src="../../../assets/curbmount.webp"
+          alt="Glass Curb-Mounted Skylight"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-center text-xl mb-2">
+            Velux Curb-Mounted Skylight
+          </div>
+          <p class="text-gray-700 text-base">
+            Curb-mounted skylights are the most common installation preference
+            in low-pitch or flat-roof situations.
+          </p>
+        </div>
+        <div class="flex justify-center p-3">
+          <button
+            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full md:mt-6 sm:mt-5 xs:mt-6"
+          >
+            <a routerLink="/curbcal" routerLinkActive="active">
+              Curb-Mounted Skylight Calculator
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <div class="basis-1/2 max-w-md rounded overflow-hidden shadow-lg m-2">
+        <img
+          class="w-full"
+          src="../../../assets/deckmount.jpg"
+          alt="Glass Curb-Mounted Skylight"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-center text-xl mb-2">
+            Velux Deck-Mounted Skylight
+          </div>
+          <p class="text-gray-700 text-base">
+            Deck-mounted skylights nail or screw down to the roof decking and
+            will typically have a low profile on the roof.
+          </p>
+        </div>
+        <div class="flex justify-center p-3">
+          <button
+            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full md:mt-6 sm:mt-5 xs:mt-6"
+          >
+            <a routerLink="/deckcal" routerLinkActive="active">
+              Deck-Mounted Skylight Calculator
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\.NetProjects\\SkylightID\\Server\\Server.csproj": {}
+    "C:\\Projects\\.NetProjects\\SkylightID\\server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\.NetProjects\\SkylightID\\Server\\Server.csproj": {
+    "C:\\Projects\\.NetProjects\\SkylightID\\server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\.NetProjects\\SkylightID\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\Projects\\.NetProjects\\SkylightID\\server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Projects\\.NetProjects\\SkylightID\\Server\\Server.csproj",
+        "projectPath": "C:\\Projects\\.NetProjects\\SkylightID\\server\\Server.csproj",
         "packagesPath": "C:\\Users\\jaypowellcs\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\.NetProjects\\SkylightID\\Server\\obj\\",
+        "outputPath": "C:\\Projects\\.NetProjects\\SkylightID\\server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
