@@ -10,6 +10,10 @@ namespace Server.Models
     {
         public DbSet<CurbMount> CurbMounts {get; set;}
 
+        public DbSet<DeckMount> DeckMounts {get; set;}
+
+        public DbSet<SelfFlash> SelfFlashes {get; set;}
+
         public SkylightContext(DbContextOptions options) : base(options)
         {
             

@@ -1,5 +1,5 @@
 export interface CurbMount {
-    Id: number;
+    Id?: number;
     curbMountCode?: string;
     sizeCode?: string;
     glassCode?: boolean;

@@ -1,1 +1,114 @@
-<p>identifydeck works!</p>
+<div class="container mx-auto">
+    <div class="flex flex-col items-center p-4">
+     
+      <p
+        class="text-red-400 text-3xl font-medium tracking-wide leading-snug text-center p-4"
+      >
+        This section will educate you on how to identify Velux Deck Mounted skylights and
+        how to measure.
+      </p>
+  
+      
+      <div class="container mx-auto">
+        <h2 class="text-red-500 text-5xl font-bold p-4 text-center">
+          Identifying Velux Deck Mounted Skylights
+        </h2>
+        <section class="flex flex-row-reverse justify-center">
+          <div class="basis-1/2 max-w-xl rounded overflow-visible shadow-lg m-2">
+            <img
+              class="w-full"
+              src="../../../assets/deckmount.jpg"
+              alt="Deck Mounted Skylight"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-center text-xl mb-2">
+                Identifying Deck Mounted Skylight
+              </div>
+              <p class="text-gray-700 text-base">
+                Velux deck-mounted skylights are the most common deck mounted skylights
+                in most markets. The most common way to identify them is the unique upstand
+                at the top of the skylight that is designed to shed water
+              </p>
+            </div>
+            <div class="flex justify-center p-3">
+              <button
+                class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full"
+                routerLink="/deckcal"
+                routerLinkActive="active"
+                >
+                Measurement Calculator
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container mx-auto">
+        <h2 class="text-red-500 text-5xl font-bold p-4 text-center">
+          How to measure a Velux Deck Mounted skylight?
+        </h2>
+        <section class="flex flex-row-reverse justify-center">
+          <div class="basis-1/2 max-w-xl rounded overflow-visible shadow-lg m-2">
+            <img
+              class="w-full"
+              src="../../../assets/rough_opening.avif"
+              alt="How to measure velux deck mount"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-center text-xl mb-2">
+                Measuring Velux Deck Mounted Skylight
+              </div>
+              <p class="text-gray-700 text-base">
+                The best measurement for a Deck Mounted skylight is the rough
+                opening. In the above photo, the black lines show what the rough
+                opening is.
+              </p>
+            </div>
+            <div class="flex justify-center p-3">
+              <button
+                class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full"
+                routerLink="/deckcal"
+                routerLinkActive="active"
+                >
+                Measurement Calculator
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+  
+      <h2 class="text-red-500 text-5xl font-bold p-4 text-center">
+        Velux Deck Mounted Skylight standard sizes
+      </h2>
+      <div class="flex flex-col">
+        <table
+          class="border-separate border table-auto border-slate-400 lg:p-10 md:p-4"
+        >
+          <thead>
+            <tr>
+              <th class="border border-slate-300 ...">Deck Mounted Code Size</th>
+              <th class="border border-slate-300 ...">Frame Measurements (W" x H")</th>
+              <th class="border border-slate-300 ...">
+                Rough Opening (W" x H")
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let deckmount of deckMount">
+              <td class="border border-slate-300 ...">
+                {{ deckmount.sizeCode}}
+              </td>
+              <td class="border border-slate-300 ...">
+                {{ deckmount.outsideFrameWidth }}" x
+                {{ deckmount.outsideFrameHeight}}"
+              </td>
+              <td class="border border-slate-300 ...">
+                {{ deckmount.roughOpeningWidth }}" x
+                {{ deckmount.roughOpeningHeight }}"
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

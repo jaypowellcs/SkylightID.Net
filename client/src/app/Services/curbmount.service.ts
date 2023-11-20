@@ -9,6 +9,8 @@ const baseUrl = 'https://localhost:7008/curbmount';
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class CurbmountService {
 
   constructor(private http: HttpClient) { }
@@ -16,5 +18,9 @@ export class CurbmountService {
   
   getAll():Observable<CurbMount[]> {
     return this.http.get<CurbMount[]>(baseUrl);
+  }
+
+  get(Id: number): Observable<CurbMount> {
+    return this.http.get(`${baseUrl}/${Id}`);
   }
 }

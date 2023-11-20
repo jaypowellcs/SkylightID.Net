@@ -1,1 +1,99 @@
-<p>selfcal works!</p>
+<div class="container mx-auto">
+    <div class="flex flex-col items-center p-4">
+      <h1 class="text-red-500 text-5xl text-center font-bold p-4">
+       Self-Flashed Skylight Calculator
+      </h1>
+  
+      <div class="flex flex-col max-w-lg rounded overflow-hidden shadow-lg">
+        <p
+          class="text-red-400 text-base italic font-medium tracking-wide leading-snug text-center p-4"
+        >
+          To use this calculator, measure the rough opening,
+          as shown below. 
+        </p>
+        <img
+          class="w-full"
+          src="../../../assets/rough_opening.avif"
+          alt="Photo showcasing where to measure a curb-mounted skylight"
+        />
+        <form (ngSubmit)="onSubmit()" [formGroup]="measurementForm">
+          <div
+            class="flex flex-col align-middle p-3 static"
+            [ngClass]="{ hidden: showMenu, flex: !showMenu }"
+          >
+            <div class="w-full md:w-3/4 px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="row"
+              >
+                Rough Opening Width
+              </label>
+              <input
+                class="form-control appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="row"
+                type="number"
+                placeholder="Rough Opening in inches"
+                step=".0001"
+                required
+                formControlName="row"
+              />
+            </div>
+            <div class="w-full md:w-3/4 px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="roh"
+              >
+                Rough Opening Height
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="roh"
+                type="number"
+                placeholder="Rough Opening in inches"
+                step=".0001"
+                formControlName="roh"
+              />
+            </div>
+            <div class="w-full md:w-3/4 px-3">
+              <button
+                class="shadow bg-red-500 hover:bg-red-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 m-4 rounded"
+                type="submit"
+                [disabled]="!measurementForm.valid"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+          <div *ngIf="showSelfSize" >
+            <div>
+              <p class="text-justify p-2">
+                A standard Velux Skylight will fit your rough opening.
+                QPF {{ selfFlash?.sizeCode }} will be what you need to use.
+              </p>
+            </div>
+            <button
+              class="shadow bg-red-500 hover:bg-red-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 m-4 rounded"
+              type="button"
+              (click)="onReset()"
+            >
+              Reset
+            </button>
+          </div>
+          <div *ngIf="customSelf">
+            <p class="text-justify p-2">
+              Velux does not offer a standard skylight for this size, you will need to order a
+              self-flashed skylight that is custom or build a curb. 
+            </p>
+            <button
+              class="shadow bg-red-500 hover:bg-red-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 m-4 rounded"
+              type="button"
+              (click)="onReset()"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
