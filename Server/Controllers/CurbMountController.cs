@@ -9,7 +9,7 @@ namespace Server.Controllers;
 public class CurbMountController : ControllerBase
 {
     private readonly SkylightContext _context; 
-    
+
     public CurbMountController(SkylightContext context)
     {
         _context = context; 

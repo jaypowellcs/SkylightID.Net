@@ -11,8 +11,8 @@ using Server.Models;
 namespace Server.Migrations
 {
     [DbContext(typeof(SkylightContext))]
-    [Migration("20231116192301_Deck+SelfDB")]
-    partial class DeckSelfDB
+    [Migration("20231120023701_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

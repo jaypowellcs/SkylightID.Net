@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CurbMount } from '../../Models/curbmount.model';
 import { CurbmountService } from '../../Services/curbmount.service';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-identifycurb',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink, RouterLinkActive, RouterOutlet],
   providers: [CurbmountService],
   templateUrl: './identifycurb.component.html',
   styleUrl: './identifycurb.component.scss',

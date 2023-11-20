@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DeckmountService } from '../../Services/deckmount.service';
 import { DeckMount } from '../../Models/deckmount.model';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-identifydeck',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink, RouterLinkActive, RouterOutlet],
   providers: [DeckmountService],
   templateUrl: './identifydeck.component.html',
   styleUrl: './identifydeck.component.scss'

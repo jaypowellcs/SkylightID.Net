@@ -37,6 +37,8 @@ export class CurbcalComponent {
     let ocdh = Number(this.measurementForm.value.ocdh);
     let ocdw = Number(this.measurementForm.value.ocdw);
     
+    console.log(ocdh);
+
     this.whichCurb(ocdw, ocdh);
     console.log(this.whichCurb(ocdw, ocdh)); 
     this.measurementForm.reset();
@@ -50,7 +52,7 @@ export class CurbcalComponent {
     this.showCurbSize = false;
   }
 
-  whichCurb(a: any, b: any) {
+  whichCurb(a: number, b: number) {
     if (a >= 16 && a <= 18.25 && b >= 32 && b <= 34.25) {
       this.curbMountService.get(1).subscribe({
         next: (data) => {

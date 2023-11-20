@@ -5,11 +5,29 @@
 namespace Server.Migrations
 {
     /// <inheritdoc />
-    public partial class DeckSelfDB : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "CurbMounts",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CurbMountCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SizeCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OutsideCurbWidth = table.Column<float>(type: "real", nullable: false),
+                    OutsideCurbHeight = table.Column<float>(type: "real", nullable: false),
+                    MaxSkyClearWidth = table.Column<float>(type: "real", nullable: false),
+                    MaxSkyClearHeight = table.Column<float>(type: "real", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CurbMounts", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "DeckMounts",
                 columns: table => new
@@ -50,6 +68,9 @@ namespace Server.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "CurbMounts");
+
             migrationBuilder.DropTable(
                 name: "DeckMounts");
 
