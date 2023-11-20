@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WJTn1LdsLAIhrnEWKEE1U5rWNPRUTuE+PuYWY3EoEK/QuZjyRdDNjdcnW7foMDmXX0+nkGMMV/GrGWB4wW7eMg==",
+  "dgSpecHash": "zaRtT6TO1u3qF/buvPC9JoFdODXig/g+rkoP/yLGq2BQbF690kpwDJiyiScUEPMhGu+Al66fbVErrO39ScRozQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\.NetProjects\\SkylightID\\Server\\Server.csproj",
+  "projectFilePath": "C:\\Projects\\.NetProjects\\SkylightID\\server\\Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaypowellcs\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\jaypowellcs\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
