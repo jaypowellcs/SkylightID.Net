@@ -1,4 +1,4 @@
-# SkylightId
+# SkylightId.Net 
 
 ## Table of Contents
 * [Introduction](#Introduction)
