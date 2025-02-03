@@ -9,7 +9,7 @@
 * [Contact](#contact)
 
 ## Introduction
-Website built with Angular/Spring Boot/Mysql to help contractors identify and measure skylights.  
+Website built with Angular/.Net/Mysql to help contractors identify and measure skylights.  
  
 ## Technologies Used 
       - Angular
